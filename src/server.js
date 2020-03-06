@@ -4,7 +4,11 @@ const config = require('./config/index');
 const app = express();
 
 exports.start = () => {
-  app.listen(config.port, () => {
-    console.log(`Server listening on port ${config.port}`);
+  return new Promise((resolve, reject) => {
+    app.listen(config.port, () => {
+      console.log(`Server listening on port ${config.port}`);
+    });
+
+    resolve();
   });
 };
