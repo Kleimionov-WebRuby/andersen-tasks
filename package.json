@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha spec",
     "dev": "nodemon src/index"
   },
   "repository": {
@@ -19,9 +19,14 @@
   },
   "homepage": "https://github.com/Kleimionov-WebRuby/andersen-tasks#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "require.all": "^2.0.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0",
+    "nodemon": "^2.0.2",
+    "sinon": "^9.0.1",
+    "sinon-chai": "^3.5.0"
   }
 }
